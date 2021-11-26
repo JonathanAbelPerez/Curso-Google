@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">AboutMe</string>
+    <string name="name">Jonathan</string>
+    <string name="what_is_your_nickname">What is your Nickname?</string>
+    <string name="done">Done</string>
+
+    <string name="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus varius est vel lacus placerat, a luctus arcu dictum. Pellentesque vitae arcu quis elit aliquet ullamcorper non sed felis. Nullam molestie nisl tortor, in dapibus elit tincidunt ut. Vestibulum sollicitudin aliquet orci et scelerisque. Etiam euismod maximus sem, quis bibendum neque vestibulum a. Maecenas quis tortor ut ex consequat tincidunt. Etiam at laoreet leo. Quisque eu tempor libero. Aenean ullamcorper, diam a hendrerit mattis, ipsum mi dapibus ligula, sed sollicitudin lectus felis nec justo. Curabitur finibus neque vel magna eleifend, et cursus leo viverra.
+
+\n\nNulla facilisi. Cras vitae porttitor tortor, ac commodo lorem. Duis fringilla felis id est efficitur, vel finibus justo convallis. Proin vehicula dictum dolor at aliquam. Nunc fringilla risus nec urna congue tincidunt. Praesent porttitor hendrerit sodales. Donec varius commodo mauris. Nulla ac sapien ut ex mattis egestas.
+
+\n\nMaecenas quam turpis, pharetra id diam nec, pellentesque elementum risus. Vestibulum eget lacus quam. Nunc aliquam id justo a consequat. Morbi lorem nunc, viverra eu cursus a, vestibulum eget augue. Nullam blandit lorem eu pretium egestas. Sed ullamcorper lacus sed ex vestibulum, eu viverra erat molestie. Cras at nisi orci. Quisque sed purus vestibulum, vehicula magna vel, fringilla libero. Curabitur eu lacus nulla. Duis pretium enim ullamcorper erat mattis, in aliquam risus ullamcorper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse congue a velit ut vulputate. Vivamus mi risus, vulputate sed convallis eu, maximus nec lacus. Etiam tempus leo augue, sed vestibulum nulla auctor at.
+
+\n\nPellentesque nec feugiat tortor, eget ultricies erat. Aliquam non lobortis massa. Praesent convallis, ex in molestie pretium, nibh nibh molestie est, a feugiat ante neque sit amet sapien. In volutpat pharetra mi, ut pulvinar dui elementum eget. Morbi ultricies lorem nisi, eget pellentesque sapien ullamcorper ut. Duis pretium ullamcorper consequat. Proin vehicula purus quis luctus dapibus. Quisque nisl ex, aliquam scelerisque vulputate sed, cursus at sapien. Morbi facilisis, dolor eget facilisis placerat, ante nibh tincidunt ligula, sed maximus massa lacus sit amet augue.
+
+\n\nPhasellus rhoncus posuere leo sit amet rhoncus. Nunc sed odio nec neque sodales pharetra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis in mollis tellus, in dapibus nunc. Maecenas fringilla ullamcorper hendrerit. Curabitur vitae elit ac mauris venenatis finibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus rhoncus gravida. Mauris rutrum risus id aliquet imperdiet. Proin vulputate elit ex, id hendrerit erat viverra ac. Maecenas maximus aliquet quam, a vestibulum quam pharetra scelerisque. Aliquam erat volutpat. In hac habitasse platea dictumst. In lacinia id erat ac pretium. Nam quis turpis aliquet, efficitur eros at, fermentum enim. Curabitur ipsum tortor, accumsan in elementum ut, ultricies id lorem.</string>
+    <string name="yellow_star">Yellow Star</string>
+</resources>
