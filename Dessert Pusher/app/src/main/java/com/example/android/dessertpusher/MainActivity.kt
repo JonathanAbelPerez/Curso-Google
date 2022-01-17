@@ -28,7 +28,6 @@ import androidx.lifecycle.LifecycleObserver
 import com.example.android.dessertpusher.databinding.ActivityMainBinding
 import timber.log.Timber
 
-
 const val KEY_REVENUE = "key_revenue"
 const val KEY_DESSERTS_SOLD = "key_dessertsSold"
 const val KEY_TIMER = "key_dessertTimer"
