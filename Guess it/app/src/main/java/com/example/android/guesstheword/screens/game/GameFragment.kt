@@ -16,12 +16,16 @@
 
 package com.example.android.guesstheword.screens.game
 
+import android.os.Build
 import android.os.Bundle
+import android.os.VibrationEffect
+import android.os.Vibrator
 import android.text.format.DateUtils
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.getSystemService
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
@@ -31,9 +35,8 @@ import androidx.navigation.fragment.NavHostFragment.findNavController
 import com.example.android.guesstheword.R
 import com.example.android.guesstheword.databinding.GameFragmentBinding
 
-/**
- * Fragment where the game is played
- */
+
+
 class GameFragment : Fragment() {
 
     private lateinit var viewModel: GameViewModel
@@ -56,10 +59,6 @@ class GameFragment : Fragment() {
         binding.gameViewModel = viewModel
         binding.setLifecycleOwner(this)
 
-//        viewModel.currentTime.observe(viewLifecycleOwner, Observer { newTimer  ->
-//            binding.timerText.text = DateUtils.formatElapsedTime(newTimer)
-//        })
-
         viewModel.eventGameFinish.observe(viewLifecycleOwner, Observer { hasFinished ->
             if (hasFinished){
                 val currentScore = viewModel.score.value ?: 0
@@ -69,8 +68,26 @@ class GameFragment : Fragment() {
             }
         })
 
+        viewModel.eventBuzz.observe(viewLifecycleOwner, Observer{ buzzType ->
+            if(buzzType != GameViewModel.BuzzType.NO_BUZZ){
+                buzz(buzzType.pattern)
+                viewModel.onBuzzComplete()
+            }
+        })
+
         return binding.root
 
+    }
+
+    private fun buzz(pattern: LongArray) {
+        val buzzer = activity?.getSystemService<Vibrator>()
+
+        buzzer?.let {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                buzzer.vibrate(VibrationEffect.createWaveform(pattern, -1))
+
+            }
+        }
     }
 
 }
